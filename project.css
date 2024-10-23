@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #383535;
+    animation: slide 1s forwards;
+    padding: 50px 0px 0px 0px ;
+}
+@keyframes slide{
+0%{
+    transform: translateY(-500px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+a{
+    color: #ffff;
+    text-decoration: none;
+
+    
+   
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px  9%;
+    justify-content: center;
+    display: flex;
+
+    z-index: 100;
+    
+}
+ 
+
+
+
+ ul{
+    display: flex;
+
+   
+   
+
+}
+
+
+.navbar li{
+    list-style:none;
+    margin-left: 30px; 
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s; 
+    visibility: hidden;
+    animation: eight 1s forwards;
+    animation-delay: 1.2s;
+  
+}
+@keyframes eight{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+    visibility: visible;
+    transform: translateX(0px);
+    
+}
+
+   
+    
+}
+.navbar li:hover{
+    color: #7cf03d;
+    transform: translateY(-10px);
+}
+.navbar a:hover {
+    color:#7cf03d;
+      transform: translateY(-10px);
+      
+    
+}
+.box{
+margin: 40px ;
+}
+.topic{
+    display: flex;
+    padding: 50px 20px 0px 50px;
+}
+.box h1{
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color:  #7cf03d;
+   
+ 
+
+    
+}
+.box h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color:  aqua;
+    
+}
+.term h1{
+ font-size: 30px;
+  color:gold;
+  text-align: center;
+}
+.term p{
+    font-size: 18px;
+}
+.term p:last-child{
+    margin-left: 20px;
+    
+}
+.content img{
+    width: 80%;
+    height:80%;
+    border-radius: 50px;
+    margin: 100px 0px 0px 50px;
+    
+    
+}
+.term p{
+    margin: 20px 0px 0px 0px;
+    color: #ffff;
+    line-height: 30px;
+}
+.term p span{
+  color: #6262de;
+    font-weight: bolder;
+}
+@media screen and (min-width:350px) and (max-width:780px){
+    .navbar{
+        position: fixed;  
+      
+      } 
+    .navbar ul{
+
+        margin: 0px;
+     }
+    .navbar  ul li{
+      
+        margin: 5px;
+     }
+     
+    .topic{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    
+      
+  
+    }
+
+    
+    .box{
+        padding: 0;
+        margin: 30px 0px 0px 0px;
+    }
+    .box h1{
+        font-size: 28px;
+    }
+    .box h2{
+        font-size: 25px;
+    }
+    .term p:nth-child(2){
+        text-indent: 90px;
+       
+    }
+    .term p{
+        padding: 0px 10px 0px 10px;
+      margin: 10px 0px 0px 0px;
+      text-align: start;
+      line-height: 25px;
+    }
+    .content img{
+        margin: 20px 0px 20px 20px;
+    }
+    .term h1{
+        font-size: 20px;
+        margin: 20px 0px 0px 0px;
+    }
+    .box h2{
+        margin: 10px 0px 0px 0px ;
+    }
+    
+}
